@@ -4,7 +4,7 @@ namespace Brychtaj;
 
 class FormFactory
 {
-    protected function render($type, $class, $name = null, $value = null)
+    protected static function render($type, $class, $name = null, $value = null)
     {
         return "
             <div class='form-group'>
