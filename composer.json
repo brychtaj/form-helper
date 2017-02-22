@@ -1,0 +1,21 @@
+{
+    "name": "brychtaj/simple-form",
+    "description": "simple package test",
+    "license": "MIT",
+    "keywords": ["form"],
+    "authors": [
+        {
+            "name": "Jaroslav Brychta",
+            "email": "name@domain.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brychtaj\\": "src"
+        }
+    }
+}
