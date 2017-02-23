@@ -6,9 +6,12 @@ class FormFactory
 {
     protected static function render($type, $class, $name = null, $value = null)
     {
+        $Name = ucfirst($name);
+
         return "
+            <label for='$name' class='control-llabel'>$Name</label>
             <div class='form-group'>
-                <input type='$type' name='$name' value='$value' class='$class'>
+                <input type='$type' id='$name' name='$name' placeholder='$value' class='$class'>
             </div>
         ";
     }
@@ -21,12 +24,5 @@ class FormFactory
     public static function close()
     {
         echo "<form>";
-    }
-
-    public static function label($name, $for = null)
-    {
-        echo "
-            <label for='$for' class='control-llabel'>$name</label>
-        ";
     }
 }
